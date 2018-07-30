@@ -1,0 +1,314 @@
+// grids
+.about {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 80px;
+}
+.more-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 50px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+.abilities {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto auto auto auto;
+  grid-gap: 20px;
+}
+.interest {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+// body section
+.container {
+  background-color: #39393A;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+}
+// home section
+.home {
+  background-image: url("../images/M16-JUNIOR-WEB-DEVELOPER-COURSE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  h1, h3 {
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+  }
+  div {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 62%;
+    top: 3%;
+    left: 18%;
+  }
+}
+
+// about section
+.about {
+  background-color: #C1B098;
+  div {
+    text-align: center;
+  }
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+// skills section
+.skills {
+  img {
+    padding-left: 20%;
+    width: 50%;
+    height: 50%;
+  }
+
+}
+
+// more info section
+.more-info {
+  background-color: #C1B098;
+  padding: 5%;
+  img {
+    width: 100%;
+  }
+}
+// project section
+.my_projects {
+    background-color: #C1B098;
+}
+.projects {
+  img {
+    padding: 2%;
+    width: 92%;
+    height: 200px;
+  }
+}
+// contact section
+.contacts {
+    background-color: #C1B098;
+}
+.contact {
+  img {
+    width: 5%;
+    height: 5%;
+  }
+}
+.contact1 {
+  padding-top: 2%;
+}
+.courses {
+  img {
+        width: 100%;
+  }
+}
+footer {
+  background-color: #C9C9C9;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%
+    h1 {
+    font-size: 2em;
+}
+  }
+  .home {
+    height: 600px;
+    div {
+      width: 98%;
+      top: 14%;
+      left: 1%;
+    }
+    h1, h3 {
+      font-size: 3em;
+    }
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    height: 300px;
+  }
+  .about {
+    img {
+      padding-top: 3%;
+    }
+  }
+  .abilities {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .abilities {
+    img {
+      width: 50%;
+      height: 50%;
+    }
+    .html {
+      padding-left: 5%;
+      img {
+        width: 100%;
+        height: 80%;
+      }
+    }
+    .css {
+      img {
+        width: 25%;
+        height: 80%;
+      }
+    }
+    .js {
+      img {
+        width: 40%;
+        height: 80%;
+      }
+    }
+    .jquery {
+      img {
+        height: 80%;
+      }
+    }
+  }
+  .interest {
+    display: grid;
+    grid-template-columns: auto  auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .interest {
+    padding: 5%;
+    text-align: left;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .more-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+  }
+  .more-info {
+    table {
+      padding-left: 26%;
+    }
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    img {
+      padding: 6%;
+      width: 90%;
+      height: 200px;
+    }
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .contact1 {
+    padding: 5%;
+  }
+  .contact {
+        font-size: 2em;
+  }
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .courses {
+     table {
+       padding-left: 32%;
+     }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%
+  }
+
+  .more-info {
+    img {
+      width: 75%;
+      height: 190px;
+    }
+  }
+
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%
+  }
+  .home {
+    div {
+      width: 93%;
+      top: 3%;
+      left: 3%;
+    }
+  }
+  .about {
+    height: 388px;
+    p {
+      padding-top: 5%;
+    }
+  }
+  .interest {
+    font-size: 1em;
+  }
+  .more-info {
+    table {
+      padding-left: 31%;
+    }
+  }
+  .projects {
+    img {
+      height: 301px;
+    }
+  }
+  .contacts {
+    padding: 6%;
+    font-size: 1em;
+  }
+}
