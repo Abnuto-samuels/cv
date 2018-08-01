@@ -10,16 +10,33 @@
   <body>
     <div class="container">
       <header>
+        <section class="nav_bar">
+            <div class="">
+              <label for="toggle">&#9776;</label>
+              <input type="checkbox" id="toggle">
+              <div class="menu">
+                 <a href="#home">HOME</a>
+                 <a href="#about">ABOUT</a>
+                 <a href="#skills">SKILLS</a>
+                 <a href="#employment">EMPLOYMENT</a>
+                 <a href="#interest">INTERESTS</a>
+                 <a href="#project">PROJECTS</a>
+                 <a href="#courses">COURSES</a>
+                 <a href="#contact">CONTACT</a>
+
+              </div>
+            </div>
+          </section>
 
       </header>
-      <section class="home">
+      <section class="home" id="home">
         <div class="">
           <h1>ABNUTO SAMUELS</h1>
           <h3>Junior Web Developer</h3>
         </div>
 
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="">
           <h1>Who I Am</h1>
           <p>A very hard-worker who is very dedicated, loving, funny, kind and has a love for all types of sports. Recently got the joy for coding as one of my passions. Enjoy communicating with others to cheer up their day and to work in groups. A very good problem solver and love taking on challenges. Very good at time management when given a task and a good team leader, willing to take on any learning opportunity to learn new things. </p>
@@ -31,28 +48,16 @@
 
       </section>
       <h1>Skills and Abilities</h1>
-      <section class="abilities">
-        <div class="html">
-          <img src="images/html.jpg" alt="">
-        </div>
-        <div class="css">
-          <img src="images/css.jpg" alt="">
-        </div>
-        <div class="js">
-          <img src="images/download.png" alt="">
-        </div>
-        <div class="jquery">
-          <img src="images/jquery.png" alt="">
-        </div>
-        <div class="api">
-          <img src="images/download (1).png" alt="">
-        </div>
+      <section class="sponsors" id="skills">
+       <div class="wrapper">
+         <div class="sliding-background"></div>
+         </div>
 
-      </section>
+     </section>
 
 
       </section>
-      <section class="more-info">
+      <section class="more-info" id="employment">
         <div class="">
           <h1>Employment History</h1>
           <table>
@@ -73,7 +78,7 @@
         </div>
 
       </section>
-      <section class="interest">
+      <section class="interest" id="interest">
         <div class="">
           <img src="images/soccer.jpg" alt="">
         </div>
@@ -90,7 +95,7 @@
       </section>
 
 
-      <section class="my_projects">
+      <section class="my_projects" id="project">
         <h1>My Projects</h1>
         <p>Click on image for full website</p>
         <div class="projects">
@@ -105,7 +110,7 @@
 
 
       </section>
-      <section class="courses">
+      <section class="courses" id="courses">
         <div class="">
 
           <h1>Secondary Education</h1>
@@ -132,7 +137,7 @@
       </section>
       <section>
 
-        <div class="contacts">
+        <div class="contacts" id="contact">
           <div class="contact1">
               <img src="images/image1.jpg" alt="">
           </div>
@@ -151,6 +156,10 @@
 
 
       </section>
+      <!-- scroll button section -->
+     <div class="scroll_button">
+        <a href="#top">^</a>
+    </div>
 
       <footer>Copyright2018AbnutoSamuels</footer>
 
