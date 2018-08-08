@@ -7,8 +7,8 @@
 .skills {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto  auto;
-  grid-gap: 80px; }
+  grid-template-rows: auto  auto auto;
+  grid-gap: 10px; }
 
 .more-info {
   display: grid;
@@ -19,28 +19,16 @@
 .projects {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto  auto;
+  grid-template-rows: auto  auto auto;
   grid-gap: 20px; }
 
 .contacts {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto  auto;
+  grid-template-rows: auto;
   grid-gap: 20px; }
 
 .courses {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto  auto;
-  grid-gap: 20px; }
-
-.abilities {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto  auto auto auto auto;
-  grid-gap: 20px; }
-
-.interest {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto  auto;
@@ -50,16 +38,16 @@ html {
   scroll-behavior: smooth; }
 
 .container {
-  background-color: #39393A;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   overflow: hidden; }
+  .container h1 {
+    text-align: center; }
 
 .menu {
   margin: 0 30px 0 0;
   display: none;
   position: absolute;
-  background-color: #39393A;
+  background-color: white;
   top: 50px;
   z-index: 100;
   width: 100%; }
@@ -97,10 +85,15 @@ label {
   width: 100%;
   height: 200px;
   margin-top: 70px; }
-  .home h1, .home h3 {
+  .home h1 {
     text-align: center;
     color: white;
     padding-top: 10%; }
+  .home h3 {
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    font-size: 16px; }
   .home div {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -108,81 +101,101 @@ label {
     top: 9%;
     left: 18%; }
 
-.about {
-  background-color: #C1B098; }
-  .about div {
-    text-align: center; }
-  .about img {
-    width: 80%;
-    height: 80%; }
+.about div {
+  text-align: center; }
+.about img {
+  width: 80%;
+  height: 80%; }
 
-.skills img {
-  padding-left: 20%;
-  width: 50%;
-  height: 50%; }
+.skills div {
+  box-shadow: 3px 3px 5px 6px black;
+  margin: 5%; }
 
-.abilities img {
-  width: 50%;
-  height: 50%; }
-.abilities .html {
-  padding-left: 5%; }
-  .abilities .html img {
-    width: 53%;
-    height: 80%; }
-.abilities .css img {
-  width: 50%;
-  height: 50%; }
-.abilities .js img {
-  width: 50%;
-  height: 50%; }
-.abilities .jquery img {
-  width: 50%;
-  height: 50%; }
+.more-info div {
+  box-shadow: 3px 3px 5px 6px black;
+  margin: 5%; }
+.more-info p {
+  text-align: center; }
 
-.more-info {
-  background-color: #C1B098;
-  padding: 5%; }
-  .more-info img {
-    width: 100%; }
-
-.my_projects {
-  background-color: #C1B098; }
+.my_projects p {
+  text-align: center; }
 
 .projects img {
   padding: 2%;
   width: 92%;
   height: 200px; }
 
-.contacts {
-  background-color: #C1B098; }
+.form-style-6 {
+  font: 95% Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 16px;
+  background: #F7F7F7; }
 
-.contact img {
-  width: 5%;
-  height: 5%; }
+.form-style-6 h1 {
+  background: black;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px; }
 
-.contact1 {
-  padding-top: 2%; }
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif; }
 
-.courses table {
-  margin-left: 25%; }
-.courses img {
-  width: 100%; }
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus {
+  box-shadow: 0 0 5px #43D1AF;
+  padding: 3%;
+  border: 1px solid #43D1AF; }
 
-.wrapper {
-  overflow: hidden; }
+.button {
+  width: 100%;
+  padding: 3%;
+  color: white;
+  background-color: black; }
 
-.sliding-background {
-  background: url("../images/carousal.png") repeat-x;
-  background-size: contain;
-  height: 150px;
-  width: 5076px;
-  animation: move 300s linear infinite; }
+.button:hover {
+  background-color: #e38f84; }
 
-@keyframes move {
-  0% {
-    transform: translate3d(0, 0, 0); }
-  100% {
-    transform: translate3d(-3172px, 0, 0); } }
+.courses div {
+  box-shadow: 3px 3px 5px 6px black;
+  margin: 5%; }
+.courses p {
+  text-align: center; }
+
 .scroll_button {
   text-align: right;
   position: sticky;
@@ -205,8 +218,14 @@ label {
   100% {
     opacity: 0.5; } }
 footer {
-  background-color: #C9C9C9; }
+  background-color: #C9C9C9;
+  text-align: center; }
 
+@media screen and (min-width: 515px) {
+  .home {
+    height: 270px; }
+    .home div {
+      top: 10%; } }
 @media screen and (min-width: 768px) {
   .container {
     width: 100% h1;
@@ -223,6 +242,8 @@ footer {
     top: 10px;
     text-align: center;
     width: 99%; }
+    .menu a {
+      padding-left: 2%; }
 
   .home {
     height: 600px; }
@@ -230,8 +251,10 @@ footer {
       width: 98%;
       top: 21%;
       left: 1%; }
-    .home h1, .home h3 {
+    .home h1 {
       font-size: 3em; }
+    .home h3 {
+      font-size: 2em; }
 
   .about {
     display: grid;
@@ -243,42 +266,9 @@ footer {
   .about img {
     padding-top: 3%; }
 
-  .abilities {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    grid-gap: 20px; }
-
-  .abilities img {
-    width: 50%;
-    height: 50%; }
-  .abilities .html {
-    padding-left: 5%; }
-    .abilities .html img {
-      width: 100%;
-      height: 80%; }
-  .abilities .css img {
-    width: 70%;
-    height: 92%; }
-  .abilities .js img {
-    width: 70%;
-    height: 92%; }
-  .abilities .jquery img {
-    height: 80%; }
-
-  .interest {
-    display: grid;
-    grid-template-columns: auto  auto;
-    grid-template-rows: auto;
-    grid-gap: 20px; }
-
-  .interest {
-    padding: 5%;
-    text-align: left; }
-
   .skills {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     grid-gap: 20px; }
 
@@ -286,14 +276,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 50px; }
-
-  .more-info table {
-    padding-left: 26%; }
+    grid-gap: 10px; }
 
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px; }
     .projects img {
@@ -317,25 +304,41 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 20px; }
-
-  .courses table {
-    padding-left: 0%; } }
+    grid-gap: 20px; } }
+@media screen and (min-width: 949px) {
+  .home div {
+    top: 14%; } }
 @media screen and (min-width: 1024px) {
   .container {
     width: 100%; }
 
+  .menu a {
+    padding-left: 6%; }
+
+  .home {
+    height: 549px; }
+    .home div {
+      top: 16%; }
+
   .more-info img {
     width: 75%;
     height: 190px; } }
+@media screen and (min-width: 1205px) {
+  .home {
+    height: 634px; } }
 @media screen and (min-width: 1440px) {
   .container {
     width: 100%; }
 
-  .home div {
-    width: 93%;
-    top: 12%;
-    left: 3%; }
+  .menu a {
+    padding-left: 7%; }
+
+  .home {
+    height: 634px; }
+    .home div {
+      width: 93%;
+      top: 16%;
+      left: 3%; }
 
   .about {
     height: 388px; }

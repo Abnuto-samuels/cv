@@ -8,8 +8,8 @@
 .skills {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto  auto;
-  grid-gap: 80px;
+  grid-template-rows: auto  auto auto;
+  grid-gap: 10px;
 }
 .more-info {
   display: grid;
@@ -20,13 +20,13 @@
 .projects {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto  auto;
+  grid-template-rows: auto  auto auto;
   grid-gap: 20px;
 }
 .contacts {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto  auto;
+  grid-template-rows: auto;
   grid-gap: 20px;
 }
 .courses {
@@ -35,34 +35,25 @@
   grid-template-rows: auto  auto;
   grid-gap: 20px;
 }
-.abilities {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto  auto auto auto auto;
-  grid-gap: 20px;
-}
-.interest {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto  auto;
-  grid-gap: 20px;
-}
+
+
 // body section
  html {
   scroll-behavior: smooth;
 }
 .container {
-  background-color: #39393A;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   overflow: hidden;
+  h1 {
+    text-align: center;
+  }
 }
 // styling nav
 .menu {
    margin: 0 30px 0 0;
    display: none;
    position: absolute;
-   background-color: #39393A;
+   background-color: white;
    top: 50px;
    z-index: 100;
    width: 100%;
@@ -106,11 +97,17 @@ label {
   width: 100%;
   height: 200px;
   margin-top: 70px;
-  h1, h3 {
+  h1 {
     text-align: center;
     color: white;
     padding-top: 10%;
   }
+   h3 {
+     text-align: center;
+     color: white;
+     padding-top: 10%;
+     font-size: 16px;
+   }
   div {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -122,7 +119,6 @@ label {
 
 // about section
 .about {
-  background-color: #C1B098;
   div {
     text-align: center;
   }
@@ -133,56 +129,28 @@ label {
 }
 // skills section
 .skills {
-  img {
-    padding-left: 20%;
-    width: 50%;
-    height: 50%;
+  div {
+    box-shadow: 3px 3px 5px 6px black;
+    margin: 5%;
   }
+}
 
-}
-// abilities section
-.abilities {
-  img {
-    width: 50%;
-    height: 50%;
-  }
-  .html {
-    padding-left: 5%;
-    img {
-      width: 53%;
-      height: 80%;
-    }
-  }
-  .css {
-    img {
-      width: 50%;
-      height: 50%;
-    }
-  }
-  .js {
-    img {
-      width: 50%;
-      height: 50%;
-    }
-  }
-  .jquery {
-    img {
-      width: 50%;
-      height: 50%;
-    }
-  }
-}
+
 // more info section
 .more-info {
-  background-color: #C1B098;
-  padding: 5%;
-  img {
-    width: 100%;
+  div {
+    box-shadow: 3px 3px 5px 6px black;
+    margin: 5%;
+  }
+  p {
+    text-align: center;
   }
 }
 // project section
 .my_projects {
-    background-color: #C1B098;
+    p {
+      text-align: center;
+    }
 }
 .projects {
   img {
@@ -192,47 +160,84 @@ label {
   }
 }
 // contact section
-.contacts {
-    background-color: #C1B098;
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
 }
-.contact {
-  img {
-    width: 5%;
-    height: 5%;
-  }
+.form-style-6 h1{
+    background: black;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
 }
-.contact1 {
-  padding-top: 2%;
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.button {
+  width: 100%;
+    padding: 3%;
+    color: white;
+    background-color: black;
+}
+.button:hover {
+  background-color: #e38f84;
 }
 .courses {
-  table {
-    margin-left: 25%;
+  div {
+    box-shadow: 3px 3px 5px 6px black;
+    margin: 5%;
   }
-  img {
-        width: 100%;
-  }
-}
-// my icon carousel
-.wrapper {
-  overflow: hidden;
-}
-.sliding-background {
-  background: url("../images/carousal.png") repeat-x;
-  background-size: contain;
-  height: 150px;
-  width: 5076px;
-  animation: move 300s linear infinite;
-  // padding-left: 0;
-  // padding-right: 0;
-}
-@keyframes move{
-  0%{
-    transform: translate3d(0, 0, 0);
-  }
-  100%{
-    transform: translate3d(-3172px, 0, 0);
+  p {
+    text-align: center;
   }
 }
+
 // styling back to top button
 .scroll_button {
   text-align: right;
@@ -257,6 +262,15 @@ label {
 }
 footer {
   background-color: #C9C9C9;
+  text-align: center;
+}
+@media screen and (min-width: 515px) {
+.home {
+      height: 270px;
+  div {
+    top: 10%;
+  }
+}
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -277,6 +291,9 @@ footer {
    top: 10px;
    text-align: center;
    width: 99%;
+   a {
+       padding-left: 2%;
+   }
  }
 
   .home {
@@ -286,9 +303,12 @@ footer {
       top: 21%;
       left: 1%;
     }
-    h1, h3 {
+    h1 {
       font-size: 3em;
     }
+     h3 {
+       font-size: 2em;
+     }
   }
   .about {
     display: grid;
@@ -302,73 +322,24 @@ footer {
       padding-top: 3%;
     }
   }
-  .abilities {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-  }
-  .abilities {
-    img {
-      width: 50%;
-      height: 50%;
-    }
-    .html {
-      padding-left: 5%;
-      img {
-        width: 100%;
-        height: 80%;
-      }
-    }
-    .css {
-      img {
-        width: 70%;
-        height: 92%;
-      }
-    }
-    .js {
-      img {
-        width: 70%;
-        height: 92%;
-
-      }
-    }
-    .jquery {
-      img {
-        height: 80%;
-      }
-    }
-  }
-  .interest {
-    display: grid;
-    grid-template-columns: auto  auto;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-  }
-  .interest {
-    padding: 5%;
-    text-align: left;
-  }
   .skills {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     grid-gap: 20px;
   }
+
+
   .more-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 50px;
+    grid-gap: 10px;
   }
-  .more-info {
-    table {
-      padding-left: 26%;
-    }
-  }
+
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
     img {
@@ -395,15 +366,29 @@ footer {
     grid-template-rows: auto;
     grid-gap: 20px;
   }
-  .courses {
-     table {
-       padding-left: 0%;
-     }
+
+}
+@media screen and (min-width: 949px) {
+  .home {
+    div {
+      top: 14%;
+    }
   }
 }
 @media screen and (min-width: 1024px) {
   .container {
     width: 100%
+  }
+  .menu {
+    a {
+      padding-left: 6%;
+    }
+  }
+  .home {
+      height: 549px;
+    div {
+      top: 16%;
+    }
   }
 
   .more-info {
@@ -414,14 +399,27 @@ footer {
   }
 
 }
+@media screen and (min-width: 1205px) {
+  .home {
+    height: 634px;
+
+
+  }
+}
 @media screen and (min-width: 1440px) {
   .container {
     width: 100%
   }
+  .menu {
+    a {
+      padding-left: 7%;
+    }
+  }
   .home {
+    height: 634px;
     div {
       width: 93%;
-      top: 12%;
+      top: 16%;
       left: 3%;
     }
   }
