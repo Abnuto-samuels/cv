@@ -101,6 +101,8 @@ label {
     top: 11%;
     left: 18%; }
 
+.about p {
+  text-align: left; }
 .about div {
   text-align: center; }
 .about img {
@@ -134,7 +136,7 @@ label {
   box-shadow: 1px 1px 1px 1px black;
   margin: 5%; }
 .courses p {
-  text-align: center; }
+  text-align: left; }
 
 .scroll_button {
   text-align: right;

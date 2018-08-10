@@ -119,6 +119,9 @@ label {
 
 // about section
 .about {
+  p {
+    text-align: left;
+  }
   div {
     text-align: center;
   }
@@ -174,7 +177,7 @@ label {
     margin: 5%;
   }
   p {
-    text-align: center;
+    text-align: left;
   }
 }
 
