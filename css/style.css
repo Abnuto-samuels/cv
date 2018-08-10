@@ -102,6 +102,7 @@ label {
     left: 18%; }
 
 .about p {
+  padding-left: 3%;
   text-align: left; }
 .about div {
   text-align: center; }
@@ -136,6 +137,7 @@ label {
   box-shadow: 1px 1px 1px 1px black;
   margin: 5%; }
 .courses p {
+  padding: 0 3%;
   text-align: left; }
 
 .scroll_button {
