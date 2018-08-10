@@ -108,13 +108,13 @@ label {
   height: 80%; }
 
 .skills div {
-  box-shadow: 3px 3px 5px 6px black;
+  box-shadow: 1px 1px 1px 1px black;
   margin: 5%; }
 .skills h2 {
   padding-left: 5%; }
 
 .more-info div {
-  box-shadow: 3px 3px 5px 6px black;
+  box-shadow: 1px 1px 1px 1px black;
   margin: 5%; }
 .more-info p {
   text-align: center; }
@@ -131,7 +131,7 @@ label {
   text-align: center; }
 
 .courses div {
-  box-shadow: 3px 3px 5px 6px black;
+  box-shadow: 1px 1px 1px 1px black;
   margin: 5%; }
 .courses p {
   text-align: center; }
