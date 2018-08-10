@@ -110,6 +110,8 @@ label {
 .skills div {
   box-shadow: 3px 3px 5px 6px black;
   margin: 5%; }
+.skills h2 {
+  padding-left: 5%; }
 
 .more-info div {
   box-shadow: 3px 3px 5px 6px black;
