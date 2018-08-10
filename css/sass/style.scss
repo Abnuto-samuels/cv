@@ -1,0 +1,391 @@
+// grids
+.about {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto auto;
+  grid-gap: 10px;
+}
+.more-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 50px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto auto;
+  grid-gap: 20px;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto  auto;
+  grid-gap: 20px;
+}
+
+
+// body section
+ html {
+  scroll-behavior: smooth;
+}
+.container {
+  font-family: 'Do Hyeon', sans-serif;
+  overflow: hidden;
+  h1 {
+    text-align: center;
+  }
+}
+// styling nav
+.menu {
+   margin: 0 30px 0 0;
+   display: none;
+   position: absolute;
+   background-color: white;
+   top: 50px;
+   z-index: 100;
+   width: 100%;
+}
+.menu{
+  a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+    display: block;
+    text-align: center;
+    clear: right;
+  }
+  a:hover {
+    color: #e38f84;
+  }
+}
+label {
+  margin: 0 40px 0 0;
+  display: block;
+  cursor: pointer;
+  width: 26px;
+  float: right;
+  font-size: 30px;
+ }
+ #toggle {
+   display: none;
+ }
+ #toggle:checked + .menu {
+   display: block;
+   padding-top: 20px;
+
+ }
+
+// home section
+.home {
+  background-image: url("../images/M16-JUNIOR-WEB-DEVELOPER-COURSE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  margin-top: 70px;
+  h1 {
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+  }
+   h3 {
+     text-align: center;
+     color: white;
+     padding-top: 10%;
+     font-size: 16px;
+   }
+  div {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 62%;
+    top: 11%;
+    left: 18%;
+  }
+}
+
+// about section
+.about {
+  div {
+    text-align: center;
+  }
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+// skills section
+.skills {
+  div {
+    box-shadow: 3px 3px 5px 6px black;
+    margin: 5%;
+  }
+}
+
+
+// more info section
+.more-info {
+  div {
+    box-shadow: 3px 3px 5px 6px black;
+    margin: 5%;
+  }
+  p {
+    text-align: center;
+  }
+}
+// project section
+.my_projects {
+    p {
+      text-align: center;
+    }
+}
+.projects {
+  img {
+    padding: 2%;
+    width: 92%;
+    height: 200px;
+  }
+}
+// contact section
+.contact {
+  p {
+    text-align: center;
+  }
+}
+.courses {
+  div {
+    box-shadow: 3px 3px 5px 6px black;
+    margin: 5%;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+// styling back to top button
+.scroll_button {
+  text-align: right;
+  position: sticky;
+  bottom: 3%;
+  padding-bottom: 2%;
+  a{
+    background-color: grey;
+    color: white;
+    padding: 14px;
+    border-radius: 2px;
+    text-decoration: none;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+  @keyframes scroll {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+  }
+}
+footer {
+  background-color: #C9C9C9;
+  text-align: center;
+}
+@media screen and (min-width: 515px) {
+.home {
+      height: 270px;
+  div {
+    top: 10%;
+  }
+}
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%
+    h1 {
+    font-size: 2em;
+  }
+  }
+  .nav_bar {
+    text-align: left;
+ }
+
+ label {
+   display: none;
+ }
+ .menu {
+   display: inline-flex;
+   top: 10px;
+   text-align: center;
+   width: 99%;
+   a {
+       padding-left: 2%;
+   }
+ }
+
+  .home {
+    height: 600px;
+    div {
+      width: 98%;
+      top: 21%;
+      left: 1%;
+    }
+    h1 {
+      font-size: 3em;
+    }
+     h3 {
+       font-size: 2em;
+     }
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    height: 300px;
+  }
+  .about {
+    img {
+      padding-top: 3%;
+    }
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+
+  .more-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    img {
+      padding: 6%;
+      width: 90%;
+      height: 200px;
+    }
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .contact1 {
+    padding: 5%;
+  }
+  .contact {
+        font-size: 2em;
+  }
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+}
+@media screen and (min-width: 949px) {
+  .home {
+    div {
+      top: 14%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%
+  }
+  .menu {
+    a {
+      padding-left: 6%;
+    }
+  }
+  .home {
+      height: 549px;
+    div {
+      top: 16%;
+    }
+  }
+
+  .more-info {
+    img {
+      width: 75%;
+      height: 190px;
+    }
+  }
+
+}
+@media screen and (min-width: 1205px) {
+  .home {
+    height: 634px;
+
+
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%
+  }
+  .menu {
+    a {
+      padding-left: 7%;
+    }
+  }
+  .home {
+    height: 634px;
+    div {
+      width: 93%;
+      top: 16%;
+      left: 3%;
+    }
+  }
+  .about {
+    height: 388px;
+    p {
+      padding-top: 5%;
+    }
+  }
+  .interest {
+    font-size: 1em;
+  }
+  .more-info {
+    table {
+      padding-left: 31%;
+    }
+  }
+  .projects {
+    img {
+      height: 301px;
+    }
+  }
+  .contacts {
+    padding: 6%;
+    font-size: 1em;
+  }
+  .courses {
+  table {
+    padding-left: 11%;
+  }
+  }
+}
