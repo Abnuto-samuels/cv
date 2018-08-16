@@ -145,12 +145,46 @@ label {
 
 // more info section
 .more-info {
-  div {
+  position: relative;
+  margin-left: 8%;
+  width: 250px;
+  height: 250px;
+
+  // div {
+  //   box-shadow: 1px 1px 1px 1px black;
+  //   margin: 5%;
+  // }
+  // p {
+  //   text-align: center;
+  // }
+  .thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
     box-shadow: 1px 1px 1px 1px black;
-    margin: 5%;
+      margin: 5%;
   }
-  p {
-    text-align: center;
+  .thecard:hover  {
+    transform: rotateY(180deg);
+  }
+  .thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    backface-visibility: hidden;
+    color: black;
+  }
+  .theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    backface-visibility: hidden;
+    color: black;
+    transform: rotateY(180deg);
   }
 }
 // project section
@@ -280,6 +314,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
+    margin-left: 30%;
   }
 
   .projects {
@@ -298,6 +333,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
+
   }
   .contact1 {
     padding: 5%;
@@ -337,18 +373,16 @@ footer {
   }
 
   .more-info {
-    img {
-      width: 75%;
-      height: 190px;
-    }
+    margin-left: 35%;
   }
 
 }
 @media screen and (min-width: 1205px) {
   .home {
     height: 634px;
-
-
+  }
+  .more-info {
+    margin-left: 40%;
   }
 }
 @media screen and (min-width: 1440px) {

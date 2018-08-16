@@ -116,11 +116,36 @@ label {
 .skills h2 {
   padding-left: 5%; }
 
-.more-info div {
-  box-shadow: 1px 1px 1px 1px black;
-  margin: 5%; }
-.more-info p {
-  text-align: center; }
+.more-info {
+  position: relative;
+  margin-left: 8%;
+  width: 250px;
+  height: 250px; }
+  .more-info .thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 5%; }
+  .more-info .thecard:hover {
+    transform: rotateY(180deg); }
+  .more-info .thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    backface-visibility: hidden;
+    color: black; }
+  .more-info .theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    backface-visibility: hidden;
+    color: black;
+    transform: rotateY(180deg); }
 
 .my_projects p {
   text-align: center; }
@@ -220,7 +245,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    margin-left: 30%; }
 
   .projects {
     display: grid;
@@ -264,12 +290,14 @@ footer {
     .home div {
       top: 16%; }
 
-  .more-info img {
-    width: 75%;
-    height: 190px; } }
+  .more-info {
+    margin-left: 35%; } }
 @media screen and (min-width: 1205px) {
   .home {
-    height: 634px; } }
+    height: 634px; }
+
+  .more-info {
+    margin-left: 40%; } }
 @media screen and (min-width: 1440px) {
   .container {
     width: 100%; }
